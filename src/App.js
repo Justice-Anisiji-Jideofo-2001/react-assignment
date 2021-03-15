@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './style/style.scss'
+import Logo from './img/Rectangle 11.png'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="cover">
+    <div className="cover-lay">
+      <div className='navbar'>
+        <div className='logo'>
+          <img src={Logo} alt=""/>
+        </div>
+        <ul className='menu'>
+          <li><a href="">watch</a></li>
+          <li><a href="">discover</a></li>
+          <li><a href="">attend</a></li>
+          <li><a href="">participate</a></li>
+          <li><a href="">abouut</a></li>
+        </ul>
+      </div>
+      <div className='txt'>
+        <div className='mie'>
+      <span>introducing mie membership. </span> <br/>
+      {/* <span>membership.</span> */}
+      </div>
+      <div className='letter'>
+        <span>Engage with MIE in a whole new way. MIE members earn <br/> exclusive access to unforgettable events with big names <br/> from the MIE Group, inspiring conversations with a global <br/> community, and more.</span>
+      </div>
+       <button className='btn'><a href="#">Explore now</a></button>
+      </div>
     </div>
-  );
+  </div>
+  )
 }
 
-export default App;
+export default App
